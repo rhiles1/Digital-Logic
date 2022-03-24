@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import './App.css';
-import './Toolbar.js';
-import './Toolbox.js';
-import './Workspace.js';
+import Toolbar from './Toolbar.js';
+import Toolbox from './Toolbox.js';
+import Workspace from './Workspace.js';
 
 function App() {
   return (
     <div className="App">
-        Toolbar()
+        <Toolbar />
         <div className="flex-hor">
-            Toolbox()
-            Workspace()
+            <Toolbox />
+            <Workspace />
         </div>
     </div>
   );

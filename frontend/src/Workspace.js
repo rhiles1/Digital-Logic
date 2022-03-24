@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import 'Workspace.css';
+import './Workspace.css';
 
 function Workspace() {
     return (

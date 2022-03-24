@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import 'Tools.css';
-import 'App.css';
+import './Tools.css';
+import './App.css';
 
 function Toolbar() {
     return (

@@ -1,28 +1,9 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Button } from "react";
+/*import styled from "styled-components";*/
 
-import 'Tools.css';
-import 'App.css';
-
-function Toolbox() {
-    return (
-        <div className="Toolbox">
-            <div className="flex-hor">
-                <div className="flex-ver">
-                    Tool(name='Item 1')
-                    Tool(name='Item 2')
-                    Tool(name='Item 3')
-                </div>
-                <div className="flex-ver">
-                    Tool(name='Item 4')
-                    Tool(name='Item 5')
-                    Tool(name='Item 6')
-                </div>
-            </div>
-        </div>
-    );
-}
-
+import './Tools.css';
+import './App.css';
+/*
 const Button = styled.button`
   background-color: black;
   color: white;
@@ -32,10 +13,29 @@ const Button = styled.button`
   margin: 10px 0px;
   cursor: pointer;
 `;
+*/
+function Toolbox() {
+    return (
+        <div className="Toolbox">
+            <div className="flex-hor">
+                <div className="flex-ver">
+                    <Tool name='Item 1' />
+                    <Tool name='Item 2' />
+                    <Tool name='Item 3' />
+                </div>
+                <div className="flex-ver">
+                    <Tool name='Item 4' />
+                    <Tool name='Item 5' />
+                    <Tool name='Item 6' />
+                </div>
+            </div>
+        </div>
+    );
+}
 
 function Tool() {
     return (
-        <Button>
+        <Button name=this.props.name>
             {this.props.name}
         </Button>
     );
