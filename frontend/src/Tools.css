@@ -1,0 +1,28 @@
+.v-tool {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.h-tool {
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    width: 5%;
+}
+
+.Toolbar {
+    background-color: grey;
+    height: 10vh;
+}
+
+.Toolbox {
+    background-color: gainsboro;
+    width: 20%;
+}
+
+.tool {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
