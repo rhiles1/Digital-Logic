@@ -4,7 +4,7 @@ import Toolbar from './Toolbar.js';
 import Toolbox from './Toolbox.js';
 import Workspace from './Workspace.js';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
         <Toolbar />
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

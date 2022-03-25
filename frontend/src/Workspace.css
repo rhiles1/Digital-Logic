@@ -3,3 +3,11 @@
     width: 90%;
     height: 90vh;
 }
+
+.square {
+    outline: #4CAF50 dotted;
+    width: 12.5%;
+    height: 12.5%;
+    display: flex;
+    flexWrap: wrap;
+}

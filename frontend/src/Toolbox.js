@@ -1,44 +1,47 @@
 import React, { Button } from "react";
-/*import styled from "styled-components";*/
 
 import './Tools.css';
 import './App.css';
-/*
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-`;
-*/
-function Toolbox() {
+
+function clickAnd() {
+    alert('You clicked AND.');
+}
+
+function clickOr() {
+    alert('You clicked OR.');
+}
+
+function clickNand() {
+    alert('You clicked NAND.');
+}
+
+function clickNor() {
+    alert('You clicked NOR.');
+}
+
+function clickXor() {
+    alert('You clicked XOR.');
+}
+
+function clickNot() {
+    alert('You clicked NOT.');
+}
+
+export default function Toolbox() {
     return (
         <div className="Toolbox">
             <div className="flex-hor">
                 <div className="flex-ver">
-                    <Tool name='Item 1' />
-                    <Tool name='Item 2' />
-                    <Tool name='Item 3' />
+                    <button className='button v-tool' onClick={clickAnd}>AND</button>
+                    <button className='button v-tool' onClick={clickNot}>NOT</button>
+                    <button className='button v-tool' onClick={clickNand}>NAND</button>
                 </div>
                 <div className="flex-ver">
-                    <Tool name='Item 4' />
-                    <Tool name='Item 5' />
-                    <Tool name='Item 6' />
+                    <button className='button v-tool' onClick={clickOr}>OR</button>
+                    <button className='button v-tool' onClick={clickXor}>XOR</button>
+                    <button className='button v-tool' onClick={clickNor}>NOR</button>
                 </div>
             </div>
         </div>
     );
 }
-
-function Tool() {
-    return (
-        <Button name=this.props.name>
-            {this.props.name}
-        </Button>
-    );
-}
-
-export default Toolbox;
