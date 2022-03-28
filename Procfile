@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn DitgitalLogic.wsgi --log-file -
+web: gunicorn DigitalLogic.wsgi --log-file -
